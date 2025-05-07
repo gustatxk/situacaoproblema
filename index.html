@@ -1,27 +1,43 @@
 <html>
-  <head>
-    <title>Empresa X</title>
-    <meta charset="UTF-8">
-  </head>
-  <body>
-    <div>
-      <h1>empresa x</h1>
-      <p>Bem vindo ao nosso site</p>
-    </div>
+<head>
+  <title>empresa x</title>
+  <meta charset="utf-8">
+</head>
+<body>
 
-    <div>
-      <b>serviços</b>
-      <br>
-      <p>Nós oferecemos <i>consultoria</i>, <i>desenvolvimento</i> e <i>suporte técnico</i></p>
-    </div>
+  <!-- cabeçalho do site -->
+  <div>
+    <h1>empresa x</h1>
+    <p>bem vindo ao nosso site oficial</p>
+    <ul>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a>Contato</a></li> <!-- sem href -->
+    </ul>
+  </div>
 
-    <div>
-      <p><u>Sobre nós</u></p>
-      <p>A empresa foi fundada em 2010 com o objetivo de atender clientes diversos.</p>
-    </div>
+  <!-- servicos -->
+  <div id="servicos">
+    <h3>SERVIÇOS</h3> <!-- uso incorreto de h3, quebra de hierarquia -->
+    <p>Nós oferecemos consultoria, desenvolvimento, suporte técnico etc etc</p>
+  </div>
 
-    <div>
-      <a>clique aqui para falar com a gente</a>
-    </div>
-  </body>
+  <!-- sobre -->
+  <div id="sobre">
+    <h5>sobre nos</h5> <!-- tag muito abaixo na hierarquia -->
+    <p>a empresa foi fundada em 2010 com foco no cliente.</p>
+  </div>
+
+  <!-- contato -->
+  <div>
+    <h6>contato</h6>
+    <p>mande um email pra gente <a>clique aqui</a></p> <!-- sem href -->
+  </div>
+
+  <!-- rodapé -->
+  <div>
+    <p>2025 empresa x</p>
+  </div>
+
+</body>
 </html>
